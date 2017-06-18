@@ -4,7 +4,9 @@
   "description": "Static website for reflecar.es",
   "main": "index.js",
   "scripts": {
+    "build": "next build && next export -o ./dist",
     "clean": "rimraf dist",
+    "dev": "next",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:js": "standard",
     "lint:css": "stylelint src/**/*.css",
@@ -12,7 +14,11 @@
   },
   "author": "Eloy Pineda <me@eloy.codes>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "next": "^3.0.0-beta13",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
   "devDependencies": {
     "json-server": "^0.10.1",
     "standard": "^10.0.2",
