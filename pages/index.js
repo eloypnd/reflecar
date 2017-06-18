@@ -1,7 +1,11 @@
-const Index = ({ title, description }) => (
+import Widget from '../components/Widget'
+
+const Index = ({ title, widgets }) => (
   <div>
     <h1>{title}</h1>
-    <p>{description}</p>
+    {widgets.map(
+      (widget, i) => <Widget key={i} {...widget} />
+    )}
   </div>
 )
 
