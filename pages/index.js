@@ -3,7 +3,9 @@ import Widget from '../components/Widget'
 
 const Index = ({ title, widgets }) => (
   <div>
-    <h1>{title}</h1>
+    <section>
+      <h1>{title}</h1>
+    </section>
     {widgets.map(
       (widget, i) => <Widget key={i} {...widget} />
     )}

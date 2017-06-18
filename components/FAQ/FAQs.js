@@ -2,10 +2,10 @@ import FAQ from './FAQ'
 import PropTypes from 'prop-types'
 
 const FAQs = ({ content, title }) => (
-  <div>
+  <section>
     <h2>{title}</h2>
     {content.map((faq, i) => <FAQ key={i} {...faq} />)}
-  </div>
+  </section>
 )
 
 FAQs.propTypes = {
