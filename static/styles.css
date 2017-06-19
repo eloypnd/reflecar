@@ -19,6 +19,5 @@ section {
   padding: 1rem;
 }
 
-section.headerBlock {
-  text-align: center;
-}
+section.headerBlock { text-align: center; }
+section.headerBlock img { max-width: 100%; }
