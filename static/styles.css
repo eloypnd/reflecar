@@ -15,6 +15,10 @@ body {
 }
 
 section {
-  border-bottom: 5px solid #ccc;
+  border-bottom: 5px solid #0170b4;
   padding: 1rem;
+}
+
+section.headerBlock {
+  text-align: center;
 }

@@ -5,7 +5,8 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <title>Reflecar</title>
+          <meta name='viewport' content='width=device-width, initial-scale=1' />
+          <title>Reflecar - Aislamiento térmico para vehículos</title>
           <link rel='stylesheet' href='/static/styles.css' />
         </Head>
         <body>
