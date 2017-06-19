@@ -1,11 +1,8 @@
 import { getEntryById } from '../lib/contentful'
 import Widget from '../components/Widget'
 
-const Index = ({ title, widgets }) => (
+const Index = ({ widgets }) => (
   <div>
-    <section>
-      <h1>{title}</h1>
-    </section>
     {widgets.map(
       (widget, i) => <Widget key={i} {...widget} />
     )}
