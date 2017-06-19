@@ -1,9 +1,11 @@
 import FAQs from './FAQ'
+import HeaderBlock from './HeaderBlock'
 import TextBlock from './TextBlock'
 
 const WIDGETS = {
-  'TextBlock': (props) => <TextBlock {...props} />,
-  'FAQ': (props) => <FAQs {...props} />
+  'FAQ': (props) => <FAQs {...props} />,
+  'HeaderBlock': (props) => <HeaderBlock {...props} />,
+  'TextBlock': (props) => <TextBlock {...props} />
 }
 
 const Widget = (props) => {
