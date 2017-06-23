@@ -3,7 +3,7 @@ import Widget from '../components/Widget'
 
 const Index = ({ widgets }) => (
   <div>
-    {widgets.map(
+    {widgets && widgets.map(
       (widget, i) => <Widget key={i} {...widget} />
     )}
   </div>
@@ -11,7 +11,7 @@ const Index = ({ widgets }) => (
 
 Index.getInitialProps = async () => {
   const contentfulContent = await getEntryById('61X3acx1hmKaYYQomAgiy2')
-  return contentfulContent
+  return contentfulContent || {}
 }
 
 export default Index
